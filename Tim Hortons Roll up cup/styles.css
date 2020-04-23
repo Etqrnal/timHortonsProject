@@ -1,0 +1,120 @@
+
+body{
+    background: url("/images/background.jpg") no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+}
+
+
+table {
+    width: 100%;
+  }
+  
+td,th {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    color: white;
+    background-color: darkred;
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.hidden{
+    display: none;
+}
+
+.topPadding{
+    padding-top: 30px;
+}
+img{
+    padding-top: 30px;
+    width: 500px;
+}
+p{
+    color: white;
+    letter-spacing: 0.2px;
+    padding-top: 5px;
+}
+a{
+    text-decoration: none;
+}a:hover{
+    text-decoration: underline white;
+    font-weight: bold;
+    color: green;
+}
+
+.mainDiv{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 750px;
+    height: auto;
+    border-radius: 25px;
+    border: 2px solid darkred;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+i{
+    color: white;
+    letter-spacing: 0.2px;
+    padding-top: 30px;    
+}
+
+.InputDiv{
+    width: 100%; /*can be in percentage also.*/
+    background-color: darkred;
+    padding: 0px 0px 25px;
+    
+    margin: 0 auto;
+    position: relative;
+}
+
+.simDiv{
+    width: 100%; /*can be in percentage also.*/
+    background-color: darkred;
+    padding: 0px 0px 25px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+hr{
+    width: 40%;
+}
+
+
+.Btn{
+    background-color: darkred;
+    border-color: black;
+    color: white;
+    outline: 0;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 10px;
+    width: 125px;
+    height: 50px;
+}.Btn:hover{
+    font-weight: bolder;
+    border-radius: 15px;
+    border-color: lime;
+}.ContinueBtn{
+    background-color: green;
+    border-color: black;
+    color: white;
+    outline: 0;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 10px;
+    width: 125px;
+    height: 50px;    
+}.ContinueBtn:hover{
+    font-weight: bolder;
+    border-radius: 15px;
+    border-color: lime;
+}

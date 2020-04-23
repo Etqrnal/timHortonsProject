@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Tim Hortons Cup</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- MAIN DIV -->
+  <div class="mainDiv">
+    <a href="">
+        <img src="images/Tim Hortons Logo.png" alt="Tim Hortons Logo">
+    </a>
+   
+
+
+
+
+    <!-- REGION SELECTOR -->
+    <div id="InputDiv" class="InputDiv">
+      <!-- TEXT -->
+      <p class="topPadding">Enter your current <strong>REGION</strong> to play!</p>
+
+
+
+      <!-- REGION SWITCHER BUTTONS -->
+      <input type="button" id="BCBtn" value="BC" class="Btn"></button>
+      <input type="button" id="AlbertaBtn" value="Alberta" class="Btn"></button>
+      <input type="button" id="SaskatchewanBtn" value="Saskatchewan" class="Btn"></button>
+
+      <!-- FORGET REGION BUTTON -->
+      <a href="https://where-am-i.org/" target="_blank">
+        <p>
+          Find my region (click me if you don't know)
+        </p>
+      </a>
+
+    </div>
+    <div id="tableHolder" class="tableHolder hidden">
+
+      <h1 id="BCText">British Columbia</h1>
+
+      <table id="BCTable">
+        <tr>
+          <th>Prize</th>
+          <th>Probability(%)</th>
+        </tr>
+        <tr>
+          <td>Please Play Again</td>
+          <td>70%</td>
+        </tr>
+        <tr>
+          <td>Free Coffee</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td>Free Donut</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td>Grand Prize</td>
+          <td>10%</td>
+        </tr>
+      </table>
+
+      <h1 id="AlbertaText">Alberta</h1>
+
+      <table id="AlbertaTable">
+        <tr>
+          <th>Prize</th>
+          <th>Probability(%)</th>
+        </tr>
+        <tr>
+          <td>Please Play Again</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>Free Coffee</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>Free Donut</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>Grand Prize</td>
+          <td>5%</td>
+        </tr>
+      </table>
+
+      <h1 id="SaskatchewanText" >Saskatchewan</h1>
+
+      <table id="SaskatchewanTable">
+        <tr>
+          <th>Prize</th>
+          <th>Probability(%)</th>
+        </tr>
+        <tr>
+          <td>Please Play Again</td>
+          <td>70%</td>
+        </tr>
+        <tr>
+          <td>Free Coffee</td>
+          <td>1%</td>
+        </tr>
+        <tr>
+          <td>Free Donut</td>
+          <td>1%</td>
+        </tr>
+        <tr>
+          <td>Grand Prize</td>
+          <td>28%</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="simulationDiv" class="simDiv hidden"> <!-- ADD HIDDEN CLASS WHEN FINISHED -->
+      <!-- TEXT -->
+      <p class="topPadding">Press one of the buttons to <strong>PLAY</strong> Roll Up The Rim. </p>
+      <p>Current region selected: <strong id="currentRegion">NONE</strong>.</p>
+      <p id="wonItem" class="hidden">Item(s) Won: <strong id="itemWon"></strong></p>
+
+      <!-- SIMULATION TYPE -->
+      <input type="button" id="xOneBtn" value="Play Once!" class="Btn"></button>
+      <input type="button" id="xFiveBtn" value="Play 5 Times!" class="Btn"></button>
+      <input type="button" id="xGrandPrizeBtn" value="Grand Prize" class="Btn"></button>
+      <input type="button" id="xFiveHundredDonutsBtn" value="500 Donuts" class="Btn"></button>
+
+    </div>
+
+
+    <input type="button" id="ContinueBtn" value="Continue" class="ContinueBtn hidden"></button>
+  <script src="main.js"></script>
+
+  </div>
+</body>
