@@ -1,1 +1,1 @@
-<p> Project <p>
+<p> Project Tim Hortons: <p>
